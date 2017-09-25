@@ -1,41 +1,73 @@
+@font-face {
+    font-family: 'Aino Headline';
+    src: url('fonts/aino-headline-webfont.woff2') format('woff2'), url('fonts/aino-headline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aino Regular';
+    src: url('fonts/aino-regular-webfont.woff2') format('woff2'), url('fonts/aino-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aino Bold';
+    src: url('fonts/aino-bold-webfont.woff2') format('woff2'), url('fonts/aino-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Anonymous Pro", monospace;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.05em;
+}
+
+a:hover {
+    text-decoration: underline !important;
 }
 
 body {
     font-size: 16px;
+    font-family: "Aino Regular", monospace;
 }
 
 .logo {
-    background:url('img/logox2.png') no-repeat top left / 272px 91px;
+    background: url('img/logox2.png') no-repeat top left / 272px 91px;
     width: 272px;
     height: 91px;
     margin: 90px;
 }
 
 .about--text {
-    margin: 140px 90px;
+    margin: 140px 90px 0;
     max-width: 800px;
-    line-height: 1.4em;
+    line-height: 1.8em;
 }
 
 .about--text p {
     padding-bottom: 1.5em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    color: #1F3A93;
+    color: #0000f0;
     /* font-weight: bold; */
 }
 
 @keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0.5; }
-    100% { opacity:1; }
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 a:hover {
@@ -47,8 +79,9 @@ a:hover {
 }
 
 .topic--header {
-    font-size: 1.4em;
+    font-size: 2.2em;
     text-align: center;
+    font-family: 'Aino Headline';
 }
 
 .topic--header b {
@@ -58,14 +91,19 @@ a:hover {
 .topic--about {
     margin-top: 25px;
     font-size: 2.5em;
-    font-weight: bold;
     text-align: center;
+    font-family: 'Aino Headline';
+}
+
+.topic--about a {
+    text-decoration: none;
 }
 
 .speakers {
     margin: 90px 0 0px;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .speaker {
@@ -90,16 +128,20 @@ a:hover {
 .speaker-name {
     padding-top: 50px;
     font-size: 1.5em;
-    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .speaker-job {
     padding-top: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .speaker--header {
     clear: both;
     padding-top: 20px;
+    font-family: 'Aino Headline';
 }
 
 .speaker--header {
@@ -110,6 +152,9 @@ a:hover {
 .speaker-about {
     line-height: 1.4em;
     padding-top: 10px;
+    font-size: 0.9em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .panoimage {
@@ -124,23 +169,27 @@ a:hover {
     text-align: center;
     font-size: 2em;
     padding: 50px 0px;
-    background-color: #1F3A93;
+    background-color: #0000f0;
     color: white;
 }
 
 .propose a {
     color: white;
+    font-family: 'Aino Headline';
+    text-decoration: none;
 }
 
 .sponsors {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 100px;
     margin-top: 100px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .sponsors-block {
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .sponsors-hiring {
@@ -159,20 +208,34 @@ a:hover {
 
 .friends {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-bottom: 100px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.friends a {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .friend img {
-    width: 150px;
+    width: 120px;
     padding: 30px;
 }
 
 .register {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.6em;
+    text-decoration: none;
     color: #F62459;
     margin: 90px auto;
+    line-height: 1.5em;
+    font-family: 'Aino Headline';
+}
+
+.register .fb {
+    color: #0000f0;
 }
 
 .follow {
@@ -186,22 +249,30 @@ a:hover {
 
 .organiser {
     margin: 40px 90px;
-}
-
-.organiser a {
-    display: block;
-    padding: 10px 0px 0px;
+    font-size: 0.9em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.7em;
 }
 
 .eesti {
     font: 8px/4px monospace;
     text-align: center;
     opacity: 0.3;
-    color: #3498DB;
+    color: #0000f0;
     padding-bottom: 40px;
 }
 
 .end {
     height: 10px;
-    background-color: #1F3A93;
+    background-color: #0000f0;
+}
+
+@media (max-width: 600px) {
+    .logo,
+    .about--text,
+    .topic,
+    .organiser {
+        margin: 30px;
+    }
 }
