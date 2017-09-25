@@ -173,16 +173,24 @@ a:hover {
     font-size: 1.3em;
     color: #F62459;
     margin: 90px auto;
+}
 
+.follow {
+    margin: 40px 90px;
+}
+
+.follow img {
+    width: 30px;
+    margin: 20px 0px;
 }
 
 .organiser {
-    margin: 90px;
+    margin: 40px 90px;
 }
 
 .organiser a {
     display: block;
-    padding: 20px 0px 0px;
+    padding: 10px 0px 0px;
 }
 
 .eesti {
@@ -190,6 +198,7 @@ a:hover {
     text-align: center;
     opacity: 0.3;
     color: #3498DB;
+    padding-bottom: 40px;
 }
 
 .end {
