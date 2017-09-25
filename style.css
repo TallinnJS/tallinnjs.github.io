@@ -169,7 +169,7 @@ a:hover {
     text-align: center;
     font-size: 2em;
     padding: 50px 0px;
-    background-color: #0000f0;
+    background-color: #0000b4;
     color: white;
 }
 
@@ -265,7 +265,7 @@ a:hover {
 
 .end {
     height: 10px;
-    background-color: #0000f0;
+    background-color: #0000b4;
 }
 
 @media (max-width: 600px) {
