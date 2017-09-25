@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 16px;
+}
+
+.logo {
+    background:url('img/logox2.png') no-repeat top left / 272px 91px;
+    width: 272px;
+    height: 91px;
+    margin: 90px;
+}
+
+.about--text {
+    margin: 140px 90px;
+    max-width: 800px;
+    line-height: 1.4em;
+}
+
+.about--text p {
+    padding-bottom: 1.5em;
+}
+
+a {
+    color: #1F3A93;
+    /* font-weight: bold; */
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0.5; }
+    100% { opacity:1; }
+}
+
+a:hover {
+    animation: flickerAnimation 0.5s infinite;
+}
+
+.topic {
+    margin: 90px;
+}
+
+.topic--header {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.topic--header b {
+    font-size: 1.3em;
+}
+
+.topic--about {
+    margin-top: 25px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.speakers {
+    margin: 90px 0 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.speaker {
+    padding-top: 50px;
+}
+
+.speaker--photo {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+    float: left;
+    margin-right: 20px;
+    background-color: #ECECEC;
+}
+
+.blank {
+    font-size: 16px !important;
+    color: #BFBFBF;
+}
+
+.speaker-name {
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.speaker-job {
+    padding-top: 5px;
+}
+
+.speaker--header {
+    clear: both;
+    padding-top: 20px;
+}
+
+.speaker--header {
+    padding-top: 40px;
+    font-size: 1.6em;
+}
+
+.speaker-about {
+    line-height: 1.4em;
+    padding-top: 10px;
+}
+
+.panoimage {
+    height: 350px;
+    background-image: url('./img/tallinn.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.propose {
+    text-align: center;
+    font-size: 2em;
+    padding: 50px 0px;
+    background-color: #1F3A93;
+    color: white;
+}
+
+.propose a {
+    color: white;
+}
+
+.sponsors {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.sponsors-block {
+    margin-top: 50px; 
+}
+
+.sponsors-hiring {
+    font-size: 0.5em;
+    width: 100px;
+    background: #a5a5a5;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    opacity: .7;
+    transition: 0.3s opacity;
+    margin: 20px auto;
+}
+
+.friends {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+
+.friend img {
+    width: 150px;
+    padding: 30px;
+}
+
+.register {
+    text-align: center;
+    font-size: 1.3em;
+    color: #F62459;
+    margin: 90px auto;
+
+}
+
+.organiser {
+    margin: 90px;
+}
+
+.organiser a {
+    display: block;
+    padding: 20px 0px 0px;
+}
+
+.eesti {
+    font: 8px/4px monospace;
+    text-align: center;
+    opacity: 0.3;
+    color: #3498DB;
+}
+
+.end {
+    height: 10px;
+    background-color: #1F3A93;
+}
