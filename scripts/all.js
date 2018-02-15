@@ -166,7 +166,6 @@ window.addEventListener("wheel", function (event) {
   state.view.y -= heightDiff / 2 * state.settings.dimension();
   state.view.scale = newScale;
   event.preventDefault();
-  console.log(newScale);
 });
 // <---
 
