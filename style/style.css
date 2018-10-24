@@ -1,82 +1,57 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
 
-html, body {
-    width:  100%;
-    height: 100%;
-    margin: 0px;
-    background:url(
-      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAHUlEQVQoU2NkwARSyEKM9FGAYicDA8MzdDfQWAEAVT8EcWfJS8gAAAAASUVORK5CYII=
-      ) repeat;
-
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Mono', monospace;
 }
 
-.canvas {
-    image-rendering:optimizeSpeed;             /* Legal fallback */
-    image-rendering:-moz-crisp-edges;          /* Firefox        */
-    image-rendering:-o-crisp-edges;            /* Opera          */
-    image-rendering:-webkit-optimize-contrast; /* Safari         */
-    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
-    image-rendering:crisp-edges;               /* CSS4 Proposed  */
-    image-rendering:pixelated;                 /* CSS4 Proposed  */
-    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+.tjs-slogan {
+  padding: 20px;
 }
 
-#canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
+.register {
+  padding: 20px;
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    right: 50px;
-    transform: translateY(-50%);
-    width: 400px;
-    background-color: white;
-    margin: 20px;
-    padding: 70px 20px 20px;
-    background-image: url(../og.png);
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
-    background-position: 20px 20px;
+.location {
+  padding: 20px;
 }
 
-.content h1 {
-    font-size: 20px;
-    padding: 10px 0;
+.speakers {
+  padding: 20px;
 }
 
-.content p {
-    padding: 5px 0px;
+.speaker {
+  padding: 20px;
 }
 
-.content a {
-    /* text-decoration: none; */
-    color: black;
+.schedule {
+  padding: 20px;
+}
+.schedule li {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.content a:hover {
-    color: white;
-    background-color: black;
-    text-decoration: none;
+.schedule-event {
+  padding: 0 10px;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .content {
-      position: relative;
-      top: auto;
-      right: auto;
-      transform: none;
-      width: auto;
-  }
+.organisers {
+  padding: 20px;
 }
