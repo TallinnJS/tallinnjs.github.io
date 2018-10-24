@@ -24,13 +24,18 @@ a:hover {
   text-decoration: underline;
 }
 
-h2 {
+.header2 {
   font-size: 27px;
-  margin: 20px 20px;
+  margin: 20px 0px;
   font-weight: normal;
   display: inline;
   /* background-color: #f5d76e; */
   background: linear-gradient(to top, #f5d76e 40%, #fff 40%);
+  text-indent: 0;
+}
+.header2-2 {
+  font-size: 24px;
+  line-height: 50px;
 }
 
 h3 {
@@ -71,6 +76,9 @@ h3:before {
   color: #2c3e50;
 }
 
+.date {
+  margin-left: 20px;
+}
 .register {
   padding: 20px;
   line-height: 30px;
