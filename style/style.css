@@ -16,16 +16,90 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+a {
+  color: #1f3a93;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 27px;
+  margin: 20px 20px;
+  font-weight: normal;
+  display: inline;
+  /* background-color: #f5d76e; */
+  background: linear-gradient(to top, #f5d76e 40%, #fff 40%);
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: normal;
+  margin: 20px 0px 10px;
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 15px;
+}
+h3:before {
+  content: ' ';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f5d76e;
+  top: 4px;
+  left: 10px;
+  /* transform: rotate(-45deg); */
+}
+
+.logo {
+  margin: 20px 20px 10px;
+  background-image: url(./../images/logox2.png);
+  height: 65px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo-sub {
+  font-size: 15px;
+  margin: 10px 20px;
+  font-weight: normal;
+}
+
 .tjs-slogan {
   padding: 20px;
+  color: #2c3e50;
 }
 
 .register {
   padding: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
-.location {
-  padding: 20px;
+.register img {
+  display: inline-block;
+  height: 22px;
+}
+
+.register .meetup-logo {
+  /* height: 18px; */
+  /* transform: translateY(5px); */
+}
+
+.location h3 {
+  margin-left: 20px;
+}
+
+.div-header {
+  padding: 0 0 10px 20px;
+}
+.map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .speakers {
@@ -37,21 +111,77 @@ body {
 }
 
 .schedule {
-  padding: 20px;
+  padding: 20px 0;
 }
+.schedule h3 {
+  margin: 0px 20px;
+  padding-bottom: 40px;
+}
+
 .schedule li {
-  padding: 20px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
+  font-size: 13px;
+}
+
+.schedule li:nth-child(odd) {
+  background-color: #ecf0f1;
+}
+
+.schedule li:nth-child(even) {
+  background-color: #fcfcfc;
 }
 
 .schedule-event {
   padding: 0 10px;
   width: 100%;
+  font-weight: bold;
+}
+
+.schedule-event-description {
+  font-weight: normal;
+  padding-top: 10px;
 }
 
 .organisers {
-  padding: 20px;
+  padding: 0 20px 40px;
+}
+
+.organizer {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.prevevent {
+  margin: 60px 0 70px;
+  font-size: 30px;
+  padding: 60px;
+  text-align: center;
+  background-color: #eee;
+  background-image: url(./../images/prev.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.prevevent a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 120px;
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
 }
