@@ -193,3 +193,9 @@ h3:before {
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+@media only screen and (min-width: 640px) {
+  body {
+    padding: 0 10vw;
+  }
+}
