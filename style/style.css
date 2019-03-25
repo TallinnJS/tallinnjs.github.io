@@ -93,6 +93,8 @@ a:hover {
   bottom: 0;
   right: 0;
   left: 0;
+  background-image: url("/images/map.jpg");
+  background-size: contain;
 }
 
 .register {
