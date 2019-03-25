@@ -94,7 +94,9 @@ a:hover {
   right: 0;
   left: 0;
   background-image: url("/images/map.jpg");
+  background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .register {
