@@ -6,6 +6,18 @@ body {
   height: auto;
   margin: 0px;
   position: relative;
+  background-color: #f0dc50;
+}
+
+#bg {
+  position: fixed;
+  background-color: white;
+  opacity: 0.12;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 10s ease-in-out;
 }
 
 * {
@@ -39,35 +51,24 @@ a:hover {
   z-index: 10;
   position: relative;
 }
-
-
 .logo.block {
-  width: 200px;
-  height: 200px;
-  background-size: 203px 203px;
+  width: 300px;
+  height: 300px;
+  background-size: 303px 303px;
   background-position: center center;
   background-image: url(../og.png);
-  margin-bottom: 20px;
 }
-
 .about {
-  margin: 0 0 20px;
+  margin: 100px 0 20px;
   max-width: 800px;
-  padding: 20px;
-  font-size: 20px;
-  background-color: #f0dc50;
 }
-
 .date {
   margin: 100px 0;
-  font-size: 50px;
+  font-size: 40px;
 }
-
 .place{
   /* opacity: 0.3; */
-  /* filter: grayscale(100%); */
-  background-color: #232323;
-  padding: 10px;
+  filter: grayscale(100%);
 }
 .place:hover{
   filter: none;
@@ -82,12 +83,8 @@ a:hover {
 }
 
 .register a {
-  color: white;
+  color: #f0dc50;
 }
-.register a:hover {
-    background-color: #232323;
-    color: #f0dc50;
-  }
 
 .speaker-num {
   margin: 70px 10px 0px;
@@ -134,7 +131,7 @@ a:hover {
 }
 
 .schedule-name {
-  font-size: 22px;
+  font-size: 30px;
   margin-left: 10px;
 }
 
@@ -142,8 +139,7 @@ a:hover {
   margin: 100px -20px;
   padding: 20px;
   font-size: 30px;
-  
-  background-color: #f0dc50;
+  background-color: white;
 }
 
 .previous a {
@@ -163,21 +159,21 @@ a:hover {
 }
 
 .sponsors a:hover {
-  background-color: white;
+  background-color: #f0dc50;
 }
 
 .sponsors img {
-  width: 300px;
+  width: 350px;
 }
 
 .organisers {
   margin: 100px 10px 300px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .organizer-name {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .organizer-position {
   font-size: 15px;
