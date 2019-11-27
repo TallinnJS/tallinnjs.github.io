@@ -134,6 +134,12 @@ ul {
   margin-left: 10px;
 }
 
+.video {
+    padding-top: 40px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+
 .previous {
   margin: 100px -20px;
   padding: 20px;
@@ -145,9 +151,6 @@ ul {
 .previous a {
   text-decoration: none;
   font-size: 35px;
-}
-.previous a:hover {
-  background-color: white;
 }
 
 .sponsors {
