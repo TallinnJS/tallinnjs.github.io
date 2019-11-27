@@ -6,6 +6,8 @@ body {
   height: auto;
   margin: 0px;
   position: relative;
+  background: linear-gradient(0deg, rgb(80, 189, 240) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgb(80, 189, 240) 100%);
+
 }
 
 * {
@@ -29,11 +31,6 @@ ul {
    margin: 20px 0px;
  }
 
-a:hover {
-  color: #f0dc50;
-  background-color: #121212;
-}
-
 .blocks {
   padding: 20px;
   z-index: 10;
@@ -47,7 +44,7 @@ a:hover {
   background-size: 203px 203px;
   background-position: center center;
   background-image: url(../og.png);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .about {
@@ -55,7 +52,6 @@ a:hover {
   max-width: 800px;
   padding: 20px;
   font-size: 20px;
-  background-color: #f0dc50;
 }
 
 .date {
@@ -143,7 +139,7 @@ a:hover {
   padding: 20px;
   font-size: 30px;
   
-  background-color: #f0dc50;
+  background-color: rgb(80, 189, 240);
 }
 
 .previous a {
@@ -163,7 +159,7 @@ a:hover {
 }
 
 .sponsors a:hover {
-  background-color: white;
+  background-color: none;
 }
 
 .sponsors img {
@@ -188,3 +184,86 @@ a:hover {
     padding: 20px 20%;
   }
 }
+
+
+
+
+
+.winter-is-coming, .snow {
+    z-index: 100;
+    pointer-events: none;
+  }
+  
+  .winter-is-coming {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation: falling linear infinite both;
+            animation: falling linear infinite both;
+    -webkit-transform: translate3D(0, -100%, 0);
+            transform: translate3D(0, -100%, 0);
+  }
+  .snow--near {
+    -webkit-animation-duration: 50s;
+            animation-duration: 50s;
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    background-size: contain;
+  }
+  .snow--near + .snow--alt {
+    -webkit-animation-delay: 25s;
+            animation-delay: 25s;
+  }
+  .snow--mid {
+    -webkit-animation-duration: 100s;
+            animation-duration: 100s;
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+    background-size: contain;
+  }
+  .snow--mid + .snow--alt {
+    -webkit-animation-delay: 50s;
+            animation-delay: 50s;
+  }
+  .snow--far {
+    -webkit-animation-duration: 150s;
+            animation-duration: 150s;
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+    background-size: contain;
+  }
+  .snow--far + .snow--alt {
+    -webkit-animation-delay: 75s;
+            animation-delay: 75s;
+  }
+  
+  @-webkit-keyframes falling {
+    0% {
+      -webkit-transform: translate3D(-7.5%, -100%, 0);
+              transform: translate3D(-7.5%, -100%, 0);
+    }
+    100% {
+      -webkit-transform: translate3D(7.5%, 100%, 0);
+              transform: translate3D(7.5%, 100%, 0);
+    }
+  }
+  
+  @keyframes falling {
+    0% {
+      -webkit-transform: translate3D(-7.5%, -100%, 0);
+              transform: translate3D(-7.5%, -100%, 0);
+    }
+    100% {
+      -webkit-transform: translate3D(7.5%, 100%, 0);
+              transform: translate3D(7.5%, 100%, 0);
+    }
+  }
+  
