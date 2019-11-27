@@ -62,7 +62,7 @@ ul {
 .place{
   /* opacity: 0.3; */
   /* filter: grayscale(100%); */
-  background-color: #232323;
+  background-color: rgb(80, 189, 240);
   padding: 10px;
 }
 .place:hover{
@@ -74,16 +74,12 @@ ul {
   padding: 50px;
   font-size: 30px;
   color: white;
-  background-color: #232323;
+  background-color: rgb(80, 189, 240);
 }
 
 .register a {
   color: white;
 }
-.register a:hover {
-    background-color: #232323;
-    color: #f0dc50;
-  }
 
 .speaker-num {
   margin: 70px 10px 0px;
@@ -132,6 +128,11 @@ ul {
 .schedule-name {
   font-size: 22px;
   margin-left: 10px;
+}
+
+.panel {
+    font-size: 15px;
+    margin-left: 20px;
 }
 
 .video {
