@@ -1,0 +1,194 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  position: relative;
+  background: rgba(240, 220, 80, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Mono", monospace;
+  color: #121212;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+ }
+ li {
+   margin: 20px 0px;
+ }
+
+.blocks {
+  padding: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+
+.logo.block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.about {
+  margin: 0 0 20px;
+  max-width: 800px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.date {
+  margin: 100px 0;
+  font-size: 50px;
+}
+
+.place{
+  background: linear-gradient(0.25turn,  #f22f46, #f0dc50);
+  padding: 10px;
+}
+.place:hover{
+  filter: none;
+}
+
+.register {
+  margin: 50px 10px;
+  padding: 50px;
+  font-size: 30px;
+  color: white;
+  background: linear-gradient(0.25turn,  #f22f46, #f0dc50);
+}
+
+.register a {
+  color: white;
+}
+
+.speaker-num {
+  margin: 70px 10px 0px;
+  font-weight: bold;
+}
+
+.speaker-name {
+  font-size: 35px;
+}
+.speaker-from {
+  font-size: 20px;
+}
+.speaker-photo {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(100%);
+  transition: all 1s ease;
+  margin: 10px 10px 0;
+
+}
+.speaker-photo:hover {
+  filter: none;
+}
+.speaker-header {
+  margin: 20px 0px 10px;
+  font-size: 30px;
+}
+
+.speaker-text {
+  margin: 0px 10px 50px;
+  max-width: 800px;
+}
+
+.schedule {
+  margin: 100px 10px;
+  font-size: 35px;
+}
+.schedule-time {
+  font-size: 20px;
+}
+
+.schedule-name {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.panel {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.video {
+    padding-top: 40px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+
+.previous {
+  margin: 100px -20px;
+  padding: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  
+  background: linear-gradient(0.25turn, #f0dc50, #f22f46);
+}
+
+.previous a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.sponsors {
+  font-size: 30px;
+}
+.sponsors a {
+  display: block;
+  margin: 40px 20px;
+}
+
+.sponsors a:hover {
+  background-color: none;
+}
+
+.sponsors img {
+  width: 300px;
+}
+
+.organisers {
+  margin: 100px 10px 300px;
+  font-size: 20px;
+}
+
+.organizer-name {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.organizer-position {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .blocks {
+    padding: 20px 20%;
+  }
+}
+  
+.sponsors__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

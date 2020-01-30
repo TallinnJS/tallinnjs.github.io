@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-137549243-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-137549243-1");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <title>TallinnJS 6 - Visiting Twilio</title>
+    <meta property="og:title" content="TallinnJS 6" />
+    <meta
+      property="og:description"
+      content="TallinnJS is a group of developers passionate about JavaScript and eager to gather together to share best practices and learn from each-other while having great time together."
+    />
+    <meta property="og:image" content="https://tallinnjs.github.io/og.png" />
+  </head>
+
+  <body>
+    <div id="bg"></div>
+    <div class="blocks">
+      <div class="logo block">
+        <img src="./images/tallinnjs-logo.png" width="300px" alt="TallinnJS">
+      </div>
+      <div class="about block">
+        TallinnJS is a group of developers passionate about JavaScript and eager
+        to gather together to share best practices and learn from each-other
+        while having great time together
+      </div>
+      <div class="date block">
+        <span class="date-text">
+          5th of February 2020, at 18.30 <br />
+          <a target="top" href="https://www.twilio.com/company"
+            >Twilio Office</a
+          >
+        </span>
+      </div>
+      <div class="place block">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507.48028123037204!2d24.75060042065159!3d59.41771065748235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294bbf332d49d%3A0x7ed2be4db8544e52!2sVeerenni%2038%2C%20Kesklinna%20linnaosa%2C%20Kesklinna%2C%2010135%20Harju%20maakond!5e0!3m2!1sen!2see!4v1580396319155!5m2!1sen!2see"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+        ></iframe>
+      </div>
+      <div class="register block">
+        <a href="https://www.meetup.com/Tallinn-JS/events/268054054/">
+          Feel free to register at meetup.com
+        </a>
+      </div>
+
+      <div class="speaker block">
+        <div class="speaker-num">SPEAKER #1</div>
+        <br />
+
+        <div class="speaker-name">
+          Hando Tint
+          <div class="speaker-from">Twilio Estonia</div>
+        </div>
+        <div class="speaker-photo-container">
+          <div class="speaker-about">
+            Technical Lead of Flex UI
+          </div>
+        </div>
+        <div
+          class="speaker-photo"
+          style="background-image: url(./images/hando_tint.jpeg);"
+        ></div>
+        <div class="speaker-header">
+          Turning UI into an API
+        </div>
+        <div class="speaker-text">
+          In enterprise world customers may have vastly different needs from
+          your software solution’s UI. Sometimes catering to all of them and
+          controlling them via configuration options is just not manageable.
+          Then turn your application UI into an API allowing your customers to
+          control the contents, look and behavior themselves! This talk is about
+          how Twilio Flex UI does just that in our React based UI resulting in
+          different and custom contact center solutions.
+        </div>
+      </div>
+
+      <div class="speaker block">
+        <div class="speaker-num">SPEAKER #2</div>
+        <br />
+
+        <div class="speaker-name">
+          Alekksandr Lapuškin
+          <div class="speaker-from">Twilio Estonia</div>
+        </div>
+        <div class="speaker-photo-container">
+          <div class="speaker-about">
+            Messaging UI Tech Lead
+          </div>
+        </div>
+        <div
+          class="speaker-photo"
+          style="background-image: url(./images/lapushkin.jpeg);"
+        ></div>
+        <div class="speaker-header">
+          Using the React Context as a DI container
+        </div>
+        <div class="speaker-text">
+          Doing async operations in React is pretty easy, but how can you make it testable as well? I'll give a high level overview of how you could use the React Context to inject your dependencies into your components and how it affects your tests.
+        </div>
+      </div>
+
+      <div class="schedule block">
+        Schedule:
+        <ul>
+          <li>
+            <div class="schedule-time">18:30</div>
+            <div class="schedule-name">Kickoff and greetings</div>
+          </li>
+          <li>
+            <div class="schedule-time">18:40</div>
+            <div class="schedule-name">Talk #1</div>
+          </li>
+          <li>
+            <div class="schedule-time">19:15</div>
+            <div class="schedule-name">Networking time, fueled pizza</div>
+          </li>
+          <li>
+            <div class="schedule-time">19:45</div>
+            <div class="schedule-name">Talk #2</div>
+          </li>
+          <li>
+            <div class="schedule-time">20:15+</div>
+            <div class="schedule-name">Mingling and workshops time</div>
+          </li>
+        </ul>
+      </div>
+      <div class="previous block">
+        Previous events: <br />
+        <a href="/tjs1/" target="top">1</a>
+        <a href="/tjs2/" target="top">2</a>
+        <a href="/tjs3/" target="top">3</a>
+        <a href="/tjs4/" target="top">4</a>
+        <a href="/tjs5/" target="top">5</a>
+      </div>
+      <div class="sponsors block">
+        Sponsors:
+        <div class="sponsors__row">
+          <a target="top" href="https://paxful.com">
+            <img src="/images/paxful.png" />
+          </a>
+          <a target="top" href="https://www.twilio.com/company">
+            <img
+              src="./images/twilio-logo.svg"
+            />
+          </a>
+          <a target="top" href="https://geekchester.com/">
+            <img src="/images/geek.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="organisers block">
+        Organizers
+        <div class="organizer">
+          <div class="organizer-name">
+            <a
+              href="https://www.linkedin.com/in/pavel-lavreshin-32525150/"
+              target="_blank"
+              >Pavel Lavreshin</a
+            >
+          </div>
+          <div class="organizer-position">
+            Software Engineer <br />
+            Geekchester
+          </div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+          <a
+              href="https://www.facebook.com/people/Andrei-Sukhomozgii/"
+              target="_blank">
+              Andrei Sukhomozgii</a>
+          </div>
+          <div class="organizer-position">
+              Frontend Engineer <br />
+              Paxful
+          </div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a href="http://mdunaev.github.io" target="_blank"
+              >Mikhail Dunaev</a
+            >
+          </div>
+          <div class="organizer-position">
+            Senior Frontend Developer<br />
+            Paxful
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

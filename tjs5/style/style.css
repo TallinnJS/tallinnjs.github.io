@@ -1,0 +1,273 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  position: relative;
+  background: linear-gradient(0deg, rgb(80, 189, 240) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgb(80, 189, 240) 100%);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Mono", monospace;
+  color: #121212;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+ }
+ li {
+   margin: 20px 0px;
+ }
+
+.blocks {
+  padding: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+
+.logo.block {
+  width: 200px;
+  height: 200px;
+  background-size: 203px 203px;
+  background-position: center center;
+  background-image: url(../og.png);
+  margin-bottom: 50px;
+}
+
+.about {
+  margin: 0 0 20px;
+  max-width: 800px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.date {
+  margin: 100px 0;
+  font-size: 50px;
+}
+
+.place{
+  /* opacity: 0.3; */
+  /* filter: grayscale(100%); */
+  background-color: rgb(80, 189, 240);
+  padding: 10px;
+}
+.place:hover{
+  filter: none;
+}
+
+.register {
+  margin: 50px 10px;
+  padding: 50px;
+  font-size: 30px;
+  color: white;
+  background-color: rgb(80, 189, 240);
+}
+
+.register a {
+  color: white;
+}
+
+.speaker-num {
+  margin: 70px 10px 0px;
+  font-weight: bold;
+}
+
+.speaker-name {
+  font-size: 35px;
+}
+.speaker-from {
+  font-size: 20px;
+}
+.speaker-photo {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(100%);
+  transition: all 1s ease;
+  margin: 10px 10px 0;
+
+}
+.speaker-photo:hover {
+  filter: none;
+  /* width: 250px;
+  height: 250px; */
+}
+.speaker-header {
+  margin: 20px 0px 10px;
+  font-size: 30px;
+}
+
+.speaker-text {
+  margin: 0px 10px 50px;
+  max-width: 800px;
+}
+
+.schedule {
+  margin: 100px 10px;
+  font-size: 35px;
+}
+.schedule-time {
+  font-size: 20px;
+}
+
+.schedule-name {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.panel {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.video {
+    padding-top: 40px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+
+.previous {
+  margin: 100px -20px;
+  padding: 20px;
+  font-size: 30px;
+  
+  background-color: rgb(80, 189, 240);
+}
+
+.previous a {
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.sponsors {
+  font-size: 30px;
+}
+.sponsors a {
+  display: block;
+  margin: 40px 20px;
+}
+
+.sponsors a:hover {
+  background-color: none;
+}
+
+.sponsors img {
+  width: 300px;
+}
+
+.organisers {
+  margin: 100px 10px 300px;
+  font-size: 20px;
+}
+
+.organizer-name {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.organizer-position {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .blocks {
+    padding: 20px 20%;
+  }
+}
+
+
+
+
+
+.winter-is-coming, .snow {
+    z-index: 100;
+    pointer-events: none;
+  }
+  
+  .winter-is-coming {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .snow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation: falling linear infinite both;
+            animation: falling linear infinite both;
+    -webkit-transform: translate3D(0, -100%, 0);
+            transform: translate3D(0, -100%, 0);
+  }
+  .snow--near {
+    -webkit-animation-duration: 50s;
+            animation-duration: 50s;
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    background-size: contain;
+  }
+  .snow--near + .snow--alt {
+    -webkit-animation-delay: 25s;
+            animation-delay: 25s;
+  }
+  .snow--mid {
+    -webkit-animation-duration: 100s;
+            animation-duration: 100s;
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+    background-size: contain;
+  }
+  .snow--mid + .snow--alt {
+    -webkit-animation-delay: 50s;
+            animation-delay: 50s;
+  }
+  .snow--far {
+    -webkit-animation-duration: 150s;
+            animation-duration: 150s;
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+    background-size: contain;
+  }
+  .snow--far + .snow--alt {
+    -webkit-animation-delay: 75s;
+            animation-delay: 75s;
+  }
+  
+  @-webkit-keyframes falling {
+    0% {
+      -webkit-transform: translate3D(-7.5%, -100%, 0);
+              transform: translate3D(-7.5%, -100%, 0);
+    }
+    100% {
+      -webkit-transform: translate3D(7.5%, 100%, 0);
+              transform: translate3D(7.5%, 100%, 0);
+    }
+  }
+  
+  @keyframes falling {
+    0% {
+      -webkit-transform: translate3D(-7.5%, -100%, 0);
+              transform: translate3D(-7.5%, -100%, 0);
+    }
+    100% {
+      -webkit-transform: translate3D(7.5%, 100%, 0);
+              transform: translate3D(7.5%, 100%, 0);
+    }
+  }
+  
