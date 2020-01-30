@@ -18,9 +18,9 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="/style/style.css" />
-    <title>TallinnJS 5</title>
-    <meta property="og:title" content="TallinnJS 5" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <title>TallinnJS 6 - Visiting Twilio</title>
+    <meta property="og:title" content="TallinnJS 6" />
     <meta
       property="og:description"
       content="TallinnJS is a group of developers passionate about JavaScript and eager to gather together to share best practices and learn from each-other while having great time together."
@@ -29,38 +29,35 @@
   </head>
 
   <body>
-
-        <div class="winter-is-coming">
-  
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-              </div>
-
+    <div id="bg"></div>
     <div class="blocks">
+      <div class="logo block">
+        <img src="./images/tallinnjs-logo.png" width="300px" alt="TallinnJS">
+      </div>
       <div class="about block">
-        <div class="logo block"></div>
-        TallinnJS is a group of developers passionate about JavaScript
-        and eager to gather together to share best practices and learn from
-        each-other while having great time together
+        TallinnJS is a group of developers passionate about JavaScript and eager
+        to gather together to share best practices and learn from each-other
+        while having great time together
       </div>
       <div class="date block">
         <span class="date-text">
-          <b>TallinnJS 5</b><br />
-          05 December 2019 <br />
-          <a target="top" href="https://www.superangel.io/paloaltoclub">Palo Alto</a>
+          5th of February 2020, at 18.30 <br />
+          <a target="top" href="https://www.twilio.com/company"
+            >Twilio Office</a
+          >
         </span>
       </div>
       <div class="place block">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.6677802164734!2d24.726993015863645!3d59.43861520929761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469293dccfa0c64f%3A0xb3ef362274f213b5!2sPalo%20Alto%20Club!5e0!3m2!1sru!2see!4v1572465651910!5m2!1sru!2see" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507.48028123037204!2d24.75060042065159!3d59.41771065748235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294bbf332d49d%3A0x7ed2be4db8544e52!2sVeerenni%2038%2C%20Kesklinna%20linnaosa%2C%20Kesklinna%2C%2010135%20Harju%20maakond!5e0!3m2!1sen!2see!4v1580396319155!5m2!1sen!2see"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+        ></iframe>
       </div>
       <div class="register block">
-        <a href="https://www.meetup.com/Tallinn-JS/events/266804451/">
+        <a href="https://www.meetup.com/Tallinn-JS/events/268054054/">
           Feel free to register at meetup.com
         </a>
       </div>
@@ -68,86 +65,83 @@
       <div class="speaker block">
         <div class="speaker-num">SPEAKER #1</div>
         <br />
-        
+
         <div class="speaker-name">
-            Rauno Freiberg<div class="speaker-from">Veriff / Tallinn</div>
+          Hando Tint
+          <div class="speaker-from">Twilio Estonia</div>
         </div>
         <div class="speaker-photo-container">
-        
           <div class="speaker-about">
-            Software Engineer
+            Technical Lead of Flex UI
           </div>
         </div>
-        <div class="speaker-photo" style="background-image: url(/images/Rauno.jpg);">
-          </div>
+        <div
+          class="speaker-photo"
+          style="background-image: url(./images/hando_tint.jpeg);"
+        ></div>
         <div class="speaker-header">
-            Measuring the Impact of a Design System
+          Turning UI into an API
         </div>
         <div class="speaker-text">
-            Everyone is building a design system, but what about measuring it? While building Genoma, Veriff's design system, I realized that we should have a way to see it mature over time. I’ll dive deep into my experience of creating a metrics dashboard for tracking the adoption and impact of a design system
+          In enterprise world customers may have vastly different needs from
+          your software solution’s UI. Sometimes catering to all of them and
+          controlling them via configuration options is just not manageable.
+          Then turn your application UI into an API allowing your customers to
+          control the contents, look and behavior themselves! This talk is about
+          how Twilio Flex UI does just that in our React based UI resulting in
+          different and custom contact center solutions.
         </div>
       </div>
-
 
       <div class="speaker block">
         <div class="speaker-num">SPEAKER #2</div>
         <br />
 
         <div class="speaker-name">
-            Anton Kastritskiy<div class="speaker-from">Yandex.Market / Moscow</div>
+          Alekksandr Lapuškin
+          <div class="speaker-from">Twilio Estonia</div>
         </div>
         <div class="speaker-photo-container">
-          
           <div class="speaker-about">
-            Frontend developer
+            Messaging UI Tech Lead
           </div>
         </div>
-
-        <div class="speaker-photo" style="background-image: url(/images/Anton.jpg);">
-          </div>
-
+        <div
+          class="speaker-photo"
+          style="background-image: url(./images/lapushkin.jpeg);"
+        ></div>
         <div class="speaker-header">
-            DX & application styling
+          Using the React Context as a DI container
         </div>
         <div class="speaker-text">
-            Let’s take a look of the tools and abstraction the community used to style react applications over the years. Highlight what we have learned from these tools and look into how we solved the styling complexity issue at Yandex Market design system.
+          Doing async operations in React is pretty easy, but how can you make it testable as well? I'll give a high level overview of how you could use the React Context to inject your dependencies into your components and how it affects your tests.
         </div>
       </div>
-
-      
 
       <div class="schedule block">
         Schedule:
         <ul>
           <li>
-            <div class="schedule-time">18:25</div>
+            <div class="schedule-time">18:30</div>
             <div class="schedule-name">Kickoff and greetings</div>
           </li>
           <li>
-            <div class="schedule-time">18:30</div>
-            <div class="schedule-name">Talk #1 - Measuring the Impact of a Design System</div>
+            <div class="schedule-time">18:40</div>
+            <div class="schedule-name">Talk #1</div>
           </li>
           <li>
-            <div class="schedule-time">19:00</div>
-            <div class="schedule-name">Networking - Pizza</div>
+            <div class="schedule-time">19:15</div>
+            <div class="schedule-name">Networking time, fueled pizza</div>
           </li>
           <li>
-            <div class="schedule-time">19:20</div>
-            <div class="schedule-name">Talk #2 - DX & application styling</div>
+            <div class="schedule-time">19:45</div>
+            <div class="schedule-name">Talk #2</div>
           </li>
           <li>
-            <div class="schedule-time">19:50</div>
-            <div class="schedule-name">Panel discussion</div>
-            <div class="panel">Theme: Design systems</div> 
-            <div class="panel">Moderator: Kateryna Porshnieva</div>
-          </li>
-          <li>
-            <div class="schedule-time">20:30+</div>
-            <div class="schedule-name">After-party</div>
+            <div class="schedule-time">20:15+</div>
+            <div class="schedule-name">Mingling and workshops time</div>
           </li>
         </ul>
-
-        <div class="video">Attention, the video will be recorded.</div>
       </div>
       <div class="previous block">
         Previous events: <br />
@@ -155,30 +149,26 @@
         <a href="/tjs2/" target="top">2</a>
         <a href="/tjs3/" target="top">3</a>
         <a href="/tjs4/" target="top">4</a>
+        <a href="/tjs5/" target="top">5</a>
       </div>
       <div class="sponsors block">
         Sponsors:
-        <a target="top" href="https://paxful.com">
-          <img src="/images/paxful.png" />
-        </a>
-        <a target="top" href="https://geekchester.com/">
-          <img src="/images/geek.svg" />
-        </a>
+        <div class="sponsors__row">
+          <a target="top" href="https://paxful.com">
+            <img src="/images/paxful.png" />
+          </a>
+          <a target="top" href="https://www.twilio.com/company">
+            <img
+              src="./images/twilio-logo.svg"
+            />
+          </a>
+          <a target="top" href="https://geekchester.com/">
+            <img src="/images/geek.svg" />
+          </a>
+        </div>
       </div>
       <div class="organisers block">
         Organizers
-        <div class="organizer">
-          <div class="organizer-name">
-            <a href="http://mdunaev.github.io" target="_blank"
-              >Mikhail Dunaev</a
-            >
-          </div>
-          <div class="organizer-position">
-            Head of Frontend Development<br />
-            Paxful
-          </div>
-        </div>
-
         <div class="organizer">
           <div class="organizer-name">
             <a
@@ -192,90 +182,30 @@
             Geekchester
           </div>
         </div>
-
-
-        <div class="organizer">
-                <div class="organizer-name">
-                <a
-                    href="https://www.linkedin.com/in/galina-brokan-662875125/"
-                    target="_blank">
-                    Galina Brokan</a>
-                </div>
-                <div class="organizer-position">
-                    Event Manager <br />
-                    Geekchester
-                </div>
-            </div>
-
-
         <div class="organizer">
           <div class="organizer-name">
-            <a
-              href="https://www.linkedin.com/in/amarcinkevicius/"
-              target="_blank"
-              >Alexander Marcinkevicius</a
+          <a
+              href="https://www.facebook.com/people/Andrei-Sukhomozgii/"
+              target="_blank">
+              Andrei Sukhomozgii</a>
+          </div>
+          <div class="organizer-position">
+              Frontend Engineer <br />
+              Paxful
+          </div>
+        </div>
+        <div class="organizer">
+          <div class="organizer-name">
+            <a href="http://mdunaev.github.io" target="_blank"
+              >Mikhail Dunaev</a
             >
           </div>
           <div class="organizer-position">
-            Software Engineer <br />
-            Geekchester
+            Senior Frontend Developer<br />
+            Paxful
           </div>
         </div>
-
-        <div class="organizer">
-            <div class="organizer-name">
-            <a
-                href="https://www.linkedin.com/in/kporshnieva/"
-                target="_blank">
-                Kateryna Porshnieva</a>
-            </div>
-            <div class="organizer-position">
-                Verification Tool Team Lead<br />
-                Veriff
-            </div>
-        </div>
-
-
-        <div class="organizer">
-                <div class="organizer-name">
-                <a
-                    href="https://www.facebook.com/people/Andrei-Sukhomozgii/"
-                    target="_blank">
-                    Andrei Sukhomozgii</a>
-                </div>
-                <div class="organizer-position">
-                    Frontend Engineer <br />
-                    Paxful
-                </div>
-            </div>
-
       </div>
     </div>
-
-    <script>
-    function shuffle() {
-        var container = document.getElementsByClassName("organisers")[0];
-        var elementsArray = Array.prototype.slice.call(container.getElementsByClassName('organizer'));
-            elementsArray.forEach(function(element){
-            container.removeChild(element);
-        })
-        shuffleArray(elementsArray);
-        elementsArray.forEach(function(element){
-        container.appendChild(element);
-        })
-    }
-
-    function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            var temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
-        }
-        return array;
-    }
-
-    shuffle();
-        </script>
   </body>
 </html>
