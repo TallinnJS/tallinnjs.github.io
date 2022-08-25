@@ -104,10 +104,14 @@ body {
 /* END OF MINI TAILWIND */
 
 ul {
-  list-style-type: none;
+  list-style-position: inside;
 }
 li {
    margin: 20px 0px;
+   list-style-type: '> ';
+}
+li::marker {
+  font-weight: bold;
 }
 
 .speaker-photo {
