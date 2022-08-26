@@ -53,6 +53,10 @@ body {
   display: flex;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -67,6 +71,10 @@ body {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mb-6 {
