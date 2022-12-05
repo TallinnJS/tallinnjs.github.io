@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  position: relative;
+  background: rgba(240, 220, 80, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Mono", monospace;
+  color: #1d152d;
+}
+
+.gradient-bg {
+  background: linear-gradient(0.25turn,  #343F71, #F34C19);
+}
+
+/* MINI TAILWIND */
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-2xl {
+  font-size: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-white {
+  color: white;
+}
+
+/* END OF MINI TAILWIND */
+
+ul {
+  list-style-position: inside;
+}
+li {
+   margin: 20px 0px;
+   list-style-type: '> ';
+}
+li::marker {
+  font-weight: bold;
+}
+
+.speaker-photo {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  filter: grayscale(100%);
+  transition: all 1s ease;
+  object-fit: cover;
+}
+
+.speaker-photo:hover {
+  filter: none;
+}
+
+.blocks {
+  padding: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .blocks {
+    padding: 20px 20%;
+  }
+}
+
+/* -----------  */
